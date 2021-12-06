@@ -11,7 +11,8 @@ def get_by_status(status):
     return tasks
 
 def get_by_description(description):
-    tasks = db.session.query(Task).filter(Task.description == description)
+    search = "%{}%".format(description)
+    tasks = db.session.query(Task).filter(Task.description.like(search)).all()
     return tasks
 
 def insert(description,duration,time_registred,status):
