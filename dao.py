@@ -1,8 +1,5 @@
 #from my_app import app
-from flask import Blueprint, render_template, request, redirect, url_for, get_flashed_messages
-from flask.helpers import flash
-from sqlalchemy.orm import session
-from sqlalchemy.sql.elements import not_
+from flask import Blueprint
 ###
 from app import db
 from models import Task
