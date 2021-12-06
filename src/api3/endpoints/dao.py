@@ -1,13 +1,9 @@
-#from my_app import app
-from flask import Blueprint
 ###
-from app import db
-from models import Task
-
-task = Blueprint('task',__name__)
+from api3 import db
+from api3.endpoints.models.Task import Task
 
 def get_by_status(status):
-    tasks = db.session.query(Task).filter(Task.status == status)
+    tasks = db.session.query(Task).filter_by(status = status).all()
     return tasks
 
 def get_by_description(description):
@@ -15,8 +11,8 @@ def get_by_description(description):
     tasks = db.session.query(Task).filter(Task.description.like(search)).all()
     return tasks
 
-def insert(description,duration,time_registred,status):
-    t = Task(description=description, duration=duration,time_registred=time_registred, status=status)
+def insert(description,duration,time_registred,status,id):
+    t = Task(description=description, duration=duration,time_registred=time_registred, status=status,id=id)
     db.session.add(t)
     db.session.commit()
     return t

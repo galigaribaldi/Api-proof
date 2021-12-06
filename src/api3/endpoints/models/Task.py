@@ -1,4 +1,4 @@
-from app import db
+from api3 import db
 
 class Task(db.Model):
     
@@ -17,4 +17,4 @@ class Task(db.Model):
         self.status = status
         
     def __repr__(self):
-        return '<Task %d>' % (self.id)
+        return 'Task Id: %d, Descripcion: %s, Duracion: %d' % (self.id, self.description, self.duration)
