@@ -1,7 +1,4 @@
-
 from app import db
-from decimal import Decimal
-
 
 class Task(db.Model):
     
