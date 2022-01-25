@@ -1,6 +1,6 @@
 ###
 from api3 import db
-from api3.endpoints.models.Task import Task
+from api3.tasks.models.Task import Task
 
 def get_by_status(status):
     tasks = db.session.query(Task).filter_by(status = status).all()

@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
-from api3.endpoints.models.Task import Task
-import api3.endpoints.dao as dao
+from api3.tasks.models.Task import Task
+import api3.tasks.dao as dao
 enp1 = Blueprint('end1', __name__)
 
 @enp1.route('/')
