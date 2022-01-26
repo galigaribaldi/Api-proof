@@ -1,3 +1,8 @@
+# Created By  : Galileo Garibaldi, Simón López
+# Created Date: 25/01/2022 
+# Modified Date: -
+# version ='1.0'
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)

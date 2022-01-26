@@ -1,3 +1,8 @@
+# Created By  : Galileo Garibaldi, Simón López
+# Created Date: 25/01/2022 
+# Modified Date: -
+# version ='1.0'
+
 """
 Api Student
 ------------
@@ -87,7 +92,7 @@ class ControllerStudent(MethodView):
         """
         return {"debug":"Not implemented"}
     
-#category_view = ControllerStudent.as_view('category_view')
-#app.add_url_rule('/api/student/',view_func=category_view,methods = ['GET', 'POST','PUT'])
+category_view = ControllerStudent.as_view('category_view')
+app.add_url_rule('/api/student/',view_func=category_view,methods = ['GET', 'POST','PUT'])
 
-#app.add_url_rule('/api/student/<int:id>',view_func=category_view,methods = ['GET', 'POST','DELETE'])
+app.add_url_rule('/api/student/<int:id>',view_func=category_view,methods = ['GET', 'POST','DELETE'])
