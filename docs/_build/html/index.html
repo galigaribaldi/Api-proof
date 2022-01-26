@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome to Api Proof’s documentation! &#8212; Api Proof 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-configuration">
+<span id="welcome-to-api-proof-s-documentation"></span><h1>Welcome to Api Proof’s documentation!<a class="headerlink" href="#module-configuration" title="Permalink to this headline">¶</a></h1>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Archivo de configuraciones para cada etapa del proyecto</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="configuration.BaseConfig">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">configuration.</span></span><span class="sig-name descname"><span class="pre">BaseConfig</span></span><a class="reference internal" href="_modules/configuration.html#BaseConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#configuration.BaseConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configuración de tipo Base en la cual se ponen los siguientes parametros:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span> <span class="mf">1.</span><span class="o">-</span> <span class="n">Secret</span> <span class="n">key</span>
+<span class="o">|</span> <span class="mf">2.</span><span class="o">-</span> <span class="n">Debug</span>
+<span class="o">|</span> <span class="mf">3.</span><span class="o">-</span> <span class="n">Testing</span>
+<span class="o">|</span> <span class="mf">4.</span><span class="o">-</span> <span class="n">SqlAlchemy</span> <span class="n">Database</span> <span class="n">URI</span>
+<span class="o">|</span> <span class="mf">5.</span><span class="o">-</span> <span class="n">SqlAlchemy</span> <span class="n">Track</span> <span class="n">Modifications</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="configuration.DevelopmentConfig">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">configuration.</span></span><span class="sig-name descname"><span class="pre">DevelopmentConfig</span></span><a class="reference internal" href="_modules/configuration.html#DevelopmentConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#configuration.DevelopmentConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configuración de Desarrollo</p>
+<dl class="simple">
+<dt>BaseConfig<span class="classifier">class</span></dt><dd><p>Configuración base</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="configuration.ProductionConfig">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">configuration.</span></span><span class="sig-name descname"><span class="pre">ProductionConfig</span></span><a class="reference internal" href="_modules/configuration.html#ProductionConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#configuration.ProductionConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configuración de producción</p>
+<dl class="simple">
+<dt>BaseConfig<span class="classifier">class</span></dt><dd><p>Configuración base</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<span class="target" id="module-api3.student_api.api_student"></span><section id="api-student">
+<h2>Api Student<a class="headerlink" href="#api-student" title="Permalink to this headline">¶</a></h2>
+<p>Archivo encargado de definir las rutas y los parámetros a funcionar dentor de cada de
+endpoint con los protocolos Web (POST, GET, DELETE, PUT)</p>
+</section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<p>Ruta en la que se pone la API: <strong>/api/student/</strong></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="api3.student_api.api_student.ControllerStudent">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">api3.student_api.api_student.</span></span><span class="sig-name descname"><span class="pre">ControllerStudent</span></span><a class="reference internal" href="_modules/api3/student_api/api_student.html#ControllerStudent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.api_student.ControllerStudent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clase encargada de definir los protocolos Web Get, Post, Delete, Put.</p>
+<dl class="simple">
+<dt>MethodView<span class="classifier">class</span></dt><dd><p>Clase heredada de la biblioteca de Flask (flask.views)</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="api3.student_api.api_student.ControllerStudent.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/api_student.html#ControllerStudent.delete"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.api_student.ControllerStudent.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método encargado de eliminar registros</p>
+<dl class="simple">
+<dt>id<span class="classifier">int</span></dt><dd><p>ID del Estudiante a eliminar</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>JSON</dt><dd><p>JSON con la estructura mencionada en <strong>sendResJson</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="api3.student_api.api_student.ControllerStudent.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/api_student.html#ControllerStudent.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.api_student.ControllerStudent.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método Get para traer los datos de Estudiantes</p>
+<dl class="simple">
+<dt>id<span class="classifier">int, optional</span></dt><dd><p>ID del estudiante a encontrar, by default None</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>JSON</dt><dd><p>JSON con la estructura mencionada en <strong>sendResJson</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="api3.student_api.api_student.ControllerStudent.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/api_student.html#ControllerStudent.post"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.api_student.ControllerStudent.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método para publicar un nuevo estudiante</p>
+<dl class="simple">
+<dt>Se describe el Json que se manda para publicar un estudiante::</dt><dd><p>$ { “age”:2, “name”:”Nombre”, “status”:1 }</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>JSON</dt><dd><p>JSON con la estructura mencionada en <strong>sendResJson</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="api3.student_api.api_student.ControllerStudent.put">
+<span class="sig-name descname"><span class="pre">put</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/api_student.html#ControllerStudent.put"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.api_student.ControllerStudent.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método encargado de modificar los registros</p>
+<dl class="simple">
+<dt>JSON</dt><dd><p>JSON con la estructura mencionada en <strong>sendResJson</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<span class="target" id="module-api3.student_api.controller"></span><section id="controller">
+<h2>Controller<a class="headerlink" href="#controller" title="Permalink to this headline">¶</a></h2>
+<p>Archivo encargado de hacer las operaciones de DDL en SQL, es decir, agregar, seleccionar y eliminar</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="api3.student_api.controller.convertToJson">
+<span class="sig-prename descclassname"><span class="pre">api3.student_api.controller.</span></span><span class="sig-name descname"><span class="pre">convertToJson</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">student</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#api3.student_api.models.Student.Student" title="api3.student_api.models.Student.Student"><span class="pre">api3.student_api.models.Student.Student</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/controller.html#convertToJson"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.controller.convertToJson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convertir el objeto de tipo <strong>Student</strong></p>
+<dl class="simple">
+<dt>student<span class="classifier">Student</span></dt><dd><p>Objeto de tipo <strong>Student</strong>, el cual tiene como parámetros: id, name, age, state</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>JSON</dt><dd><p>json con el formato de los tipos de dato</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api3.student_api.controller.delete_student">
+<span class="sig-prename descclassname"><span class="pre">api3.student_api.controller.</span></span><span class="sig-name descname"><span class="pre">delete_student</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/controller.html#delete_student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.controller.delete_student" title="Permalink to this definition">¶</a></dt>
+<dd><p>Eliminar un registro de el estudiante por su ID</p>
+<dl class="simple">
+<dt>id<span class="classifier">int</span></dt><dd><p>ID del estudiante (PK)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Json</dt><dd><p>json con el formato de los tipos de dato</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api3.student_api.controller.insert_student">
+<span class="sig-prename descclassname"><span class="pre">api3.student_api.controller.</span></span><span class="sig-name descname"><span class="pre">insert_student</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/controller.html#insert_student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.controller.insert_student" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insertar datos al json de Estudiante</p>
+<dl class="simple">
+<dt>json_data<span class="classifier">json</span></dt><dd><p>Json con el formato: { “age”:2, “name”:”Nombre”, “status”:1 }</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Json</dt><dd><p>json con el formato de los tipos de dato</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api3.student_api.controller.select_all_student">
+<span class="sig-prename descclassname"><span class="pre">api3.student_api.controller.</span></span><span class="sig-name descname"><span class="pre">select_all_student</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/controller.html#select_all_student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.controller.select_all_student" title="Permalink to this definition">¶</a></dt>
+<dd><p>Seleccionar todos los registros de los estudiantes</p>
+<dl class="simple">
+<dt>Json</dt><dd><p>json con el formato de los tipos de dato</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="api3.student_api.controller.select_student_by_id">
+<span class="sig-prename descclassname"><span class="pre">api3.student_api.controller.</span></span><span class="sig-name descname"><span class="pre">select_student_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/controller.html#select_student_by_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.controller.select_student_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Seleccionar registros de estudiantes por su ID</p>
+<dl class="simple">
+<dt>id<span class="classifier">int</span></dt><dd><p>Id del estudiante (PK)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Json</dt><dd><p>json con el formato de los tipos de dato</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<span class="target" id="module-api3.helper.convert_data"></span><section id="convert-data">
+<h2>Convert data<a class="headerlink" href="#convert-data" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt>Archivo encargado de darle un formato establecido de json, el cual se describe a continuación::</dt><dd><div class="line-block">
+<div class="line">{</div>
+<div class="line-block">
+<div class="line">‘code’: Codigo error o Aprobatorio</div>
+<div class="line">‘data’: lista de valores con el json de los datos</div>
+<div class="line">‘message’: Sucess - Fail</div>
+</div>
+<div class="line">} </div>
+</div>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="api3.helper.convert_data.sendResJson">
+<span class="sig-prename descclassname"><span class="pre">api3.helper.convert_data.</span></span><span class="sig-name descname"><span class="pre">sendResJson</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/helper/convert_data.html#sendResJson"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.helper.convert_data.sendResJson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método encargada de Mapear los datos a un json estandarizado</p>
+<dl>
+<dt>data<span class="classifier">list</span></dt><dd><p>lista de datos recibidos de una consulta, ésta puede estar vacía</p>
+</dd>
+<dt>code<span class="classifier">int</span></dt><dd><div class="line-block">
+<div class="line">200 -&gt; Satisfactorio.</div>
+<div class="line">404 -&gt; No Encontrado.</div>
+<div class="line">Cualquier otro, dará fail</div>
+</div>
+</dd>
+</dl>
+<dl class="simple">
+<dt>JSON</dt><dd><p>Json de respuesta</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<span class="target" id="module-api3.student_api.models.Student"></span><section id="student">
+<h2>Student<a class="headerlink" href="#student" title="Permalink to this headline">¶</a></h2>
+<p>Modelo de la tabla Student, la cual se mapea a la base de datos con la ayuda de la bilbioteca
+SQLAlchemy</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="api3.student_api.models.Student.Student">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">api3.student_api.models.Student.</span></span><span class="sig-name descname"><span class="pre">Student</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">age</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api3/student_api/models/Student.html#Student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#api3.student_api.models.Student.Student" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mapeado de Student</p>
+<dl>
+<dt>db<span class="classifier">Class</span></dt><dd><p>Clase heredada de SQLAlchemy, <strong>NO MODIFICABLE</strong>.
+Se describen los parámetros que tiene la tabla Student:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">1.- ID: Entero (Llave primaria)</div>
+<div class="line">2.- Name: Cadena</div>
+<div class="line">3.- Age: Entero </div>
+<div class="line">4.- Status: Bool</div>
+</div>
+</div></blockquote>
+</dd>
+</dl>
+<dl class="simple">
+<dt>tuple</dt><dd><p>Tupla con el siguiente formato: “Task Id, Name, Duracion”</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Api Proof</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Galileo Garibaldi, Simon Valiterra.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,10 +1,16 @@
-class BaseConfig(object):
-    """Baseconfig
-
-    Parameters
-    ----------
-    object : [type]
-        [description]
+"""
+Configuration
+-------------
+Archivo de configuraciones para cada etapa del proyecto
+"""
+class BaseConfig():
+    """Configuración de tipo Base en la cual se ponen los siguientes parametros::
+    
+        | 1.- Secret key
+        | 2.- Debug
+        | 3.- Testing
+        | 4.- SqlAlchemy Database URI
+        | 5.- SqlAlchemy Track Modifications
     """
     SECRET_KEY = 'Key'
     DEBUG = True
@@ -13,11 +19,23 @@ class BaseConfig(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class ProductionConfig(BaseConfig):
-    'Produccion configuracion'
+    """Configuración de producción
+    
+    Parameters
+    -----------
+    BaseConfig : class
+        Configuración base
+    """
     DEBUG = False
     
 class DevelopmentConfig(BaseConfig):
-    'Desarrollo configuracion'
+    """Configuración de Desarrollo
+    
+    Parameters
+    -----------
+    BaseConfig : class
+        Configuración base
+    """
     DEBUG = True
     TESTING = True
     SECRET_KEY = 'Desarrollo key'
