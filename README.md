@@ -257,3 +257,4 @@ A continuación se explicará como generar la documentación del proyecto, mient
 
 [Docstring Python](https://docs.hektorprofe.net/python/documentacion-y-pruebas/docstrings/)
 
+[Resultado final de la documentación en PDF](https://github.com/galigaribaldi/Api-proof/blob/Docs/ASSETS/pdf/apiproof.pdf)
