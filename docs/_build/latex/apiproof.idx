@@ -1,0 +1,25 @@
+\indexentry{module@\spxentry{module}!configuration@\spxentry{configuration}|hyperpage}{1}
+\indexentry{configuration@\spxentry{configuration}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{BaseConfig (class in configuration)@\spxentry{BaseConfig}\spxextra{class in configuration}|hyperpage}{1}
+\indexentry{DevelopmentConfig (class in configuration)@\spxentry{DevelopmentConfig}\spxextra{class in configuration}|hyperpage}{1}
+\indexentry{ProductionConfig (class in configuration)@\spxentry{ProductionConfig}\spxextra{class in configuration}|hyperpage}{1}
+\indexentry{module@\spxentry{module}!api3.student\_api.api\_student@\spxentry{api3.student\_api.api\_student}|hyperpage}{1}
+\indexentry{api3.student\_api.api\_student@\spxentry{api3.student\_api.api\_student}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{ControllerStudent (class in api3.student\_api.api\_student)@\spxentry{ControllerStudent}\spxextra{class in api3.student\_api.api\_student}|hyperpage}{5}
+\indexentry{delete() (api3.student\_api.api\_student.ControllerStudent method)@\spxentry{delete()}\spxextra{api3.student\_api.api\_student.ControllerStudent method}|hyperpage}{5}
+\indexentry{get() (api3.student\_api.api\_student.ControllerStudent method)@\spxentry{get()}\spxextra{api3.student\_api.api\_student.ControllerStudent method}|hyperpage}{5}
+\indexentry{post() (api3.student\_api.api\_student.ControllerStudent method)@\spxentry{post()}\spxextra{api3.student\_api.api\_student.ControllerStudent method}|hyperpage}{5}
+\indexentry{put() (api3.student\_api.api\_student.ControllerStudent method)@\spxentry{put()}\spxextra{api3.student\_api.api\_student.ControllerStudent method}|hyperpage}{5}
+\indexentry{module@\spxentry{module}!api3.student\_api.controller@\spxentry{api3.student\_api.controller}|hyperpage}{5}
+\indexentry{api3.student\_api.controller@\spxentry{api3.student\_api.controller}!module@\spxentry{module}|hyperpage}{5}
+\indexentry{convertToJson() (in module api3.student\_api.controller)@\spxentry{convertToJson()}\spxextra{in module api3.student\_api.controller}|hyperpage}{7}
+\indexentry{delete\_student() (in module api3.student\_api.controller)@\spxentry{delete\_student()}\spxextra{in module api3.student\_api.controller}|hyperpage}{7}
+\indexentry{insert\_student() (in module api3.student\_api.controller)@\spxentry{insert\_student()}\spxextra{in module api3.student\_api.controller}|hyperpage}{7}
+\indexentry{select\_all\_student() (in module api3.student\_api.controller)@\spxentry{select\_all\_student()}\spxextra{in module api3.student\_api.controller}|hyperpage}{7}
+\indexentry{select\_student\_by\_id() (in module api3.student\_api.controller)@\spxentry{select\_student\_by\_id()}\spxextra{in module api3.student\_api.controller}|hyperpage}{7}
+\indexentry{module@\spxentry{module}!api3.helper.convert\_data@\spxentry{api3.helper.convert\_data}|hyperpage}{7}
+\indexentry{api3.helper.convert\_data@\spxentry{api3.helper.convert\_data}!module@\spxentry{module}|hyperpage}{7}
+\indexentry{sendResJson() (in module api3.helper.convert\_data)@\spxentry{sendResJson()}\spxextra{in module api3.helper.convert\_data}|hyperpage}{9}
+\indexentry{module@\spxentry{module}!api3.student\_api.models.Student@\spxentry{api3.student\_api.models.Student}|hyperpage}{9}
+\indexentry{api3.student\_api.models.Student@\spxentry{api3.student\_api.models.Student}!module@\spxentry{module}|hyperpage}{9}
+\indexentry{Student (class in api3.student\_api.models.Student)@\spxentry{Student}\spxextra{class in api3.student\_api.models.Student}|hyperpage}{11}

@@ -1,7 +1,4 @@
-.. Api Proof documentation master file, created by
-   sphinx-quickstart on Tue Jan 25 14:31:32 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Api Proof documentation master file
 
 Welcome to Api Proof's documentation!
 =====================================

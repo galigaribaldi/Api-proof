@@ -1,0 +1,73 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter A
+  \item \spxentry{api3.helper.convert\_data}
+    \subitem \spxentry{module}, \hyperpage{7}
+  \item \spxentry{api3.student\_api.api\_student}
+    \subitem \spxentry{module}, \hyperpage{1}
+  \item \spxentry{api3.student\_api.controller}
+    \subitem \spxentry{module}, \hyperpage{5}
+  \item \spxentry{api3.student\_api.models.Student}
+    \subitem \spxentry{module}, \hyperpage{9}
+
+  \indexspace
+  \bigletter B
+  \item \spxentry{BaseConfig}\spxextra{class in configuration}, \hyperpage{1}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{configuration}
+    \subitem \spxentry{module}, \hyperpage{1}
+  \item \spxentry{ControllerStudent}\spxextra{class in api3.student\_api.api\_student}, 
+		\hyperpage{5}
+  \item \spxentry{convertToJson()}\spxextra{in module api3.student\_api.controller}, \hyperpage{7}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{delete()}\spxextra{api3.student\_api.api\_student.ControllerStudent method}, 
+		\hyperpage{5}
+  \item \spxentry{delete\_student()}\spxextra{in module api3.student\_api.controller}, 
+		\hyperpage{7}
+  \item \spxentry{DevelopmentConfig}\spxextra{class in configuration}, \hyperpage{1}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{get()}\spxextra{api3.student\_api.api\_student.ControllerStudent method}, 
+		\hyperpage{5}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{insert\_student()}\spxextra{in module api3.student\_api.controller}, 
+		\hyperpage{7}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{module}
+    \subitem \spxentry{api3.helper.convert\_data}, \hyperpage{7}
+    \subitem \spxentry{api3.student\_api.api\_student}, \hyperpage{1}
+    \subitem \spxentry{api3.student\_api.controller}, \hyperpage{5}
+    \subitem \spxentry{api3.student\_api.models.Student}, \hyperpage{9}
+    \subitem \spxentry{configuration}, \hyperpage{1}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{post()}\spxextra{api3.student\_api.api\_student.ControllerStudent method}, 
+		\hyperpage{5}
+  \item \spxentry{ProductionConfig}\spxextra{class in configuration}, \hyperpage{1}
+  \item \spxentry{put()}\spxextra{api3.student\_api.api\_student.ControllerStudent method}, 
+		\hyperpage{5}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{select\_all\_student()}\spxextra{in module api3.student\_api.controller}, 
+		\hyperpage{7}
+  \item \spxentry{select\_student\_by\_id()}\spxextra{in module api3.student\_api.controller}, 
+		\hyperpage{7}
+  \item \spxentry{sendResJson()}\spxextra{in module api3.helper.convert\_data}, \hyperpage{9}
+  \item \spxentry{Student}\spxextra{class in api3.student\_api.models.Student}, \hyperpage{11}
+
+\end{sphinxtheindex}
