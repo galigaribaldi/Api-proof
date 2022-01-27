@@ -35,7 +35,7 @@ A continuación se explicará como generar la documentación del proyecto, mient
 
 4. Una vez concluido los pasos de arriba, se generará una estructura similar a la siguiente
 
-   ![path1](/Users/galigaribaldi/Documents/PPropios/Api-proof/ASSETS/img/path1.png)
+   ![path1](/ASSETS/img/path1.png)
 
 5. A continuación se modificarán los sigueintes archivos
 
@@ -97,7 +97,7 @@ A continuación se explicará como generar la documentación del proyecto, mient
 6. Una vez teniendo éstos archivos, se dan algunas recomendaciones generales:
 
    1. Se recomienda usar el estilo de documentación de pandas, ya que es el mas claro, sin emabrgo puedes usar la configuración de google u otro estándar, para visualizar otro tipo de documentación, se recomienda ver la bibliografía
-   2. Se recomienda usar la extensión de VSCode, **AI Python Docstring Generator** para documentar cada parte![AIDoc](/Users/galigaribaldi/Documents/PPropios/Api-proof/ASSETS/img/AIDoc.png)
+   2. Se recomienda usar la extensión de VSCode, **AI Python Docstring Generator** para documentar cada parte![AIDoc](/ASSETS/img/AIDoc.png)
 
 7. Una vez teniendo éstos archivos, se procedrá a documentar el el archivo **api_student.py** y **run.py**
 
@@ -224,7 +224,7 @@ A continuación se explicará como generar la documentación del proyecto, mient
 
    3. Ésto generará en la carpeta **_build** la carpeta **html**, dentro de la misma, encontraremos el archivo **index.html**
 
-      ![tree](/Users/galigaribaldi/Documents/PPropios/Api-proof/ASSETS/img/tree.png)
+      ![tree](/ASSETS/img/tree.png)
 
 9. Como camino alternativo se puede generar un archivo **.pdf** a través de generarlo con **látex**
 
@@ -245,7 +245,7 @@ A continuación se explicará como generar la documentación del proyecto, mient
 
    4. Pasarán algunos segundos - Minutos, dependiendo de que tan largo sea el proyecto, una vez terminada la ejecución del mismo, se producirá una nueva carpeta a la misma altura que **html**, pero con el nombre **latex**, dentro del mismo estarán todas las extensiones de látex y los archivos propios de éstos archivos, al igaual que, el archivo **apiproof.pdf**
 
-   ![LatexFiles](/Users/galigaribaldi/Documents/PPropios/Api-proof/ASSETS/img/LatexFiles.png)
+   ![LatexFiles](/ASSETS/img/LatexFiles.png)
 
 ## Bibliografía
 
