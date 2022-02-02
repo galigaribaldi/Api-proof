@@ -12,4 +12,4 @@ Archivo de tipo main, para correrlo, sólo es necesario correr en la terminal lo
 """
 from api3 import app
 
-app.run()
+app.run(host = "0.0.0.0", port=5000,debug =True)
