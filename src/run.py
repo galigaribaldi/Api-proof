@@ -11,5 +11,6 @@ Archivo de tipo main, para correrlo, sólo es necesario correr en la terminal lo
 
 """
 from api3 import app
-
-app.run(host = "0.0.0.0", port=5000,debug =True)
+from os import environ
+if __name__ == "__main__":
+    app.run(host = "0.0.0.0",port=int(environ.get("PORT", 8080)),debug =True)
